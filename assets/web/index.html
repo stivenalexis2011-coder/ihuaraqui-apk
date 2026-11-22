@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ihuaraqui Torno Industrial | Cotizaciones</title>
+
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#eef3f8;color:#142235}
+header{background:#061421;color:white;padding:30px 6%;border-bottom:4px solid #0789ed}
+.logo{font-size:clamp(25px,4vw,43px);font-weight:900}
+.logo span{color:#0797ff}
+header p{color:#d7e8f8}
+nav{display:flex;gap:20px;flex-wrap:wrap;margin-top:20px}
+nav a{color:white;text-decoration:none;font-weight:bold}
+.hero{padding:65px 6%;background:linear-gradient(120deg,#071725,#123d5e);color:white}
+.hero h1{font-size:clamp(32px,5vw,55px);max-width:750px}
+.hero p{font-size:18px;line-height:1.7;max-width:700px}
+.btn{display:inline-block;padding:15px 22px;border-radius:9px;text-decoration:none;font-weight:bold;margin:8px 5px 0 0;border:0;cursor:pointer}
+.azul{background:#0789ed;color:white}
+.verde{background:#0ba846;color:white}
+section{padding:45px 6%}
+h2{font-size:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:white;border-radius:14px;padding:24px;box-shadow:0 5px 20px #102b4212;border:1px solid #dbe6ef}
+.card h3{color:#087bd0}
+.card p{line-height:1.6}
+form{display:grid;gap:13px}
+input,select,textarea{width:100%;padding:13px;border:1px solid #ccd7e1;border-radius:8px;font-size:16px}
+footer{background:#061421;color:white;padding:28px 6%;text-align:center}
+small{color:#607080}
+#chatbot{position:fixed;right:20px;bottom:20px;z-index:10}
+#abrirChat{border:0;border-radius:30px;background:#0789ed;color:white;padding:17px 22px;font-weight:bold;cursor:pointer;box-shadow:0 5px 20px #0003}
+#ventanaChat{display:none;width:min(350px,calc(100vw - 30px));height:440px;background:white;border-radius:15px;box-shadow:0 8px 35px #0004;overflow:hidden;margin-bottom:12px}
+.chathead{background:#071b2c;color:white;padding:16px;font-weight:bold}
+#mensajes{height:300px;overflow-y:auto;padding:13px;background:#f4f7fa}
+.msg{padding:10px 12px;border-radius:12px;margin-bottom:10px;line-height:1.4;max-width:95%;font-size:14px}
+.bot{background:#e0edfa}
+.user{background:#d6f8df;margin-left:auto}
+.opciones{display:flex;gap:6px;flex-wrap:wrap;padding:10px}
+.opciones button{border:1px solid #0789ed;background:white;color:#056ab9;padding:8px;border-radius:20px;cursor:pointer}
+.chatinput{display:flex;padding:8px;gap:6px}
+.chatinput input{min-width:0}
+.chatinput button{background:#0789ed;color:white;border:0;border-radius:8px;padding:10px}
+@media(max-width:600px){.hero{padding-top:40px;padding-bottom:40px}section{padding:32px 5%}}
+</style>
+<link rel="stylesheet" href="./catalogo.css">
+</head>
+
+<body>
+
+<div id="publicidad-ihuaraqui" style="width:100%;background:#061421;text-align:center;margin:0;padding:0;"><img src="./publicidad.jpg" alt="Ihuaraqui Torno Industrial" style="display:block;width:100%;height:auto;max-height:650px;object-fit:contain;margin:auto;"></div>
+<header>
+  <div class="logo">⚙️ IHUARAQUI <span>TORNO INDUSTRIAL</span></div>
+  <p>Precisión, calidad y confianza en cada pieza.</p>
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#piezas">Piezas</a>
+    <a href="#cotizar">Solicitar cotización</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Fabricación y reparación de piezas industriales</h1>
+  <p>Soluciones de torneado y mecanizado de precisión para empresas, industrias y talleres. Cuéntanos qué pieza necesitas y solicita una cotización sin compromiso.</p>
+  <a class="btn azul" href="#cotizar">📋 SOLICITAR COTIZACIÓN</a>
+  <a class="btn verde" href="https://wa.me/51987221347?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20industrial." target="_blank" rel="noopener">📲 HABLAR POR WHATSAPP</a>
+</div>
+
+<section id="servicios">
+  <h2>🔧 Nuestros servicios</h2>
+  <div class="grid">
+    <article class="card"><h3>⚙️ Torno convencional</h3><p>Fabricación y recuperación de piezas según las necesidades del cliente.</p></article>
+    <article class="card"><h3>🛠️ Reparación</h3><p>Reparación y recuperación de componentes para maquinaria industrial.</p></article>
+    <article class="card"><h3>🎯 Mecanizado de precisión</h3><p>Trabajos de torneado, ajustes y mecanizado de componentes.</p></article>
+    <article class="card"><h3>🏭 Atención empresarial</h3><p>Atención a empresas, industrias y talleres que necesitan soluciones técnicas.</p></article>
+  </div>
+</section>
+
+<section id="piezas">
+  <h2>🏭 Piezas que fabricamos</h2>
+  <div class="grid">
+    <article class="card"><h3>Ejes</h3><p>Fabricación y recuperación de ejes industriales.</p></article>
+    <article class="card"><h3>Bujes</h3><p>Piezas de bronce, acero y otros materiales según especificaciones.</p></article>
+    <article class="card"><h3>Bridas</h3><p>Componentes mecanizados de acuerdo con medidas y planos.</p></article>
+    <article class="card"><h3>Roscas</h3><p>Trabajos de roscado y mecanizado según requerimientos.</p></article>
+    <article class="card"><h3>Piezas especiales</h3><p>Cuéntanos qué necesitas fabricar o reparar.</p></article>
+  </div>
+</section>
+<section id="catalogo">
+  <div id="catalogoApp"></div>
+</section>
+<section id="cotizar">
+  <h2>📋 Solicita tu cotización</h2>
+  <p>Completa tus datos. Se preparará un mensaje para que puedas enviarlo por WhatsApp.</p>
+  <div class="card">
+    <form id="formCotizacion">
+      <input id="nombre" placeholder="Nombre y apellido" required>
+      <input id="empresa" placeholder="Empresa o taller">
+      <input id="telefono" placeholder="Tu teléfono de contacto" type="tel">
+      <select id="servicio" required>
+        <option value="">¿Qué servicio necesitas?</option>
+        <option>Fabricación de ejes</option>
+        <option>Fabricación de bujes</option>
+        <option>Fabricación de bridas</option>
+        <option>Roscado</option>
+        <option>Reparación de piezas</option>
+        <option>Mecanizado de precisión</option>
+        <option>Otra pieza especial</option>
+      </select>
+      <input id="material" placeholder="Material (acero, bronce, aluminio...)">
+      <input id="cantidad" placeholder="Cantidad de piezas">
+      <textarea id="detalle" rows="4" placeholder="Describe la pieza, sus medidas y el trabajo que necesitas" required></textarea>
+      <button class="btn azul" type="submit">Enviar solicitud por WhatsApp</button>
+    </form>
+    <small>Si tienes planos o fotografías, podrás adjuntarlos directamente en la conversación de WhatsApp.</small>
+  </div>
+</section>
+
+<footer>
+  <strong>IHUARAQUI TORNO INDUSTRIAL</strong>
+  <p>Precisión, calidad y confianza en cada pieza.</p>
+  <p>Atención a empresas y talleres.</p>
+</footer>
+
+<div id="chatbot">
+  <div id="ventanaChat">
+    <div class="chathead">⚙️ Asistente comercial <span style="float:right;cursor:pointer" onclick="cerrarChat()">✕</span><br><small style="color:#cde4f8">Ihuaraqui Torno Industrial</small></div>
+    <div id="mensajes"></div>
+    <div class="opciones" id="opciones"></div>
+    <div class="chatinput">
+      <input id="entradaChat" placeholder="Escribe tu consulta..." onkeydown="if(event.key==='Enter')enviarMensaje()">
+      <button onclick="enviarMensaje()">➤</button>
+    </div>
+  </div>
+  <button id="abrirChat" onclick="abrirChat()">💬 ¿Necesitas una cotización?</button>
+</div>
+
+<script>
+const WHATSAPP = "51987221347";
+let paso = 0;
+let datos = {};
+
+function abrirChat(){
+  document.getElementById("ventanaChat").style.display="block";
+  document.getElementById("abrirChat").style.display="none";
+  if(!document.getElementById("mensajes").children.length){
+    mensajeBot("¡Hola! 👋 Bienvenido a Ihuaraqui Torno Industrial. ¿Qué necesitas fabricar o reparar?");
+    mostrarOpciones(["Fabricar una pieza","Reparar una pieza","Consultar servicios","Solicitar cotización"]);
+  }
+}
+function cerrarChat(){
+  document.getElementById("ventanaChat").style.display="none";
+  document.getElementById("abrirChat").style.display="block";
+}
+function mensajeBot(t){
+  const d=document.createElement("div");
+  d.className="msg bot";d.textContent=t;
+  document.getElementById("mensajes").appendChild(d);bajar();
+}
+function mensajeUsuario(t){
+  const d=document.createElement("div");
+  d.className="msg user";d.textContent=t;
+  document.getElementById("mensajes").appendChild(d);bajar();
+}
+function bajar(){
+  const m=document.getElementById("mensajes");m.scrollTop=m.scrollHeight;
+}
+function mostrarOpciones(lista){
+  const o=document.getElementById("opciones");o.replaceChildren();
+  lista.forEach(t=>{
+    const b=document.createElement("button");b.textContent=t;
+    b.onclick=()=>procesar(t);o.appendChild(b);
+  });
+}
+function procesar(t){
+  mensajeUsuario(t);
+  document.getElementById("opciones").replaceChildren();
+  if(t==="Consultar servicios"){
+    mensajeBot("Realizamos trabajos de torno, fabricación de ejes, bujes, bridas, roscas, reparación y mecanizado de precisión.");
+    mostrarOpciones(["Solicitar cotización","Hablar por WhatsApp"]);
+    paso=0;return;
+  }
+  if(t==="Hablar por WhatsApp"){contactarWhatsApp();return;}
+  if(["Fabricar una pieza","Reparar una pieza","Solicitar cotización"].includes(t)){
+    datos.tipo=t;paso=1;
+    mensajeBot("¡Perfecto! ¿Cómo te llamas?");
+    return;
+  }
+  continuar(t);
+}
+function enviarMensaje(){
+  const e=document.getElementById("entradaChat"),t=e.value.trim();
+  if(!t)return;e.value="";procesar(t);
+}
+function continuar(t){
+  if(paso===1){datos.nombre=t;paso=2;mensajeBot("¿Cuál es el nombre de tu empresa o taller? Si eres particular, escribe «No aplica».");return;}
+  if(paso===2){datos.empresa=t;paso=3;mensajeBot("¿Qué pieza o servicio necesitas? Por ejemplo: eje, buje, brida o roscado.");return;}
+  if(paso===3){datos.pieza=t;paso=4;mensajeBot("¿Qué material, medidas y cantidad necesitas? Si no tienes esos datos, puedes escribir «Por confirmar».");return;}
+  if(paso===4){
+    datos.detalle=t;
+    mensajeBot("¡Listo! Ya preparé tu solicitud. Envíala por WhatsApp para que el equipo revise los detalles y confirme el precio.");
+    mostrarOpciones(["Enviar solicitud por WhatsApp"]);
+    paso=5;return;
+  }
+  if(t==="Enviar solicitud por WhatsApp"){contactarWhatsApp();return;}
+  datos.consulta=t;
+  mensajeBot("Puedo ayudarte con los servicios y a preparar una solicitud de cotización. Para confirmar precios y plazos, necesitamos revisar tu pieza.");
+  mostrarOpciones(["Solicitar cotización","Hablar por WhatsApp"]);
+}
+function contactarWhatsApp(){
+  let texto="Hola, Ihuaraqui Torno Industrial. Quiero consultar por sus servicios.";
+  if(datos.nombre){
+    texto="SOLICITUD DE COTIZACIÓN - IHUARAQUI TORNO INDUSTRIAL\n"+
+    "Nombre: "+(datos.nombre||"No indicado")+"\n"+
+    "Empresa: "+(datos.empresa||"No indicada")+"\n"+
+    "Tipo de solicitud: "+(datos.tipo||"Cotización")+"\n"+
+    "Pieza o servicio: "+(datos.pieza||"Por especificar")+"\n"+
+    "Material, medidas y cantidad: "+(datos.detalle||"Por confirmar")+"\n\n"+
+    "Solicito información sobre precio y plazo de entrega.";
+  }
+  window.open("https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(texto),"_blank","noopener");
+}
+document.getElementById("formCotizacion").addEventListener("submit",function(e){
+  e.preventDefault();
+  const texto="SOLICITUD DE COTIZACIÓN - IHUARAQUI TORNO INDUSTRIAL\n"+
+  "Nombre: "+document.getElementById("nombre").value+"\n"+
+  "Empresa: "+document.getElementById("empresa").value+"\n"+
+  "Teléfono: "+document.getElementById("telefono").value+"\n"+
+  "Servicio: "+document.getElementById("servicio").value+"\n"+
+  "Material: "+document.getElementById("material").value+"\n"+
+  "Cantidad: "+document.getElementById("cantidad").value+"\n"+
+  "Detalles: "+document.getElementById("detalle").value;
+  window.open("https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(texto),"_blank","noopener");
+});
+</script>
+<script src="./catalogo.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,518 @@
+
+/* ==========================================
+   IHUARAQUI TORNO INDUSTRIAL
+   CATALOGO COMERCIAL PROFESIONAL
+========================================== */
+
+.ihu-catalogo {
+  color: #142235;
+  font-family: Arial, sans-serif;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.ihu-catalogo * {
+  box-sizing: border-box;
+}
+
+.ihu-cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 25px;
+  padding: 24px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px #102b4212;
+}
+
+.ihu-cabecera h2 {
+  margin: 0 0 8px;
+  color: #071b2c;
+  font-size: clamp(23px, 3vw, 32px);
+}
+
+.ihu-cabecera p {
+  margin: 0;
+  color: #526273;
+  line-height: 1.5;
+}
+
+.ihu-carrito-toggle {
+  padding: 14px 20px;
+  border: 2px solid #d00000;
+  border-radius: 10px;
+  background: white;
+  color: #071b2c;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ihu-carrito-toggle span {
+  display: inline-block;
+  padding: 4px 9px;
+  margin-left: 5px;
+  background: #d00000;
+  color: white;
+  border-radius: 50%;
+}
+
+.ihu-filtros {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 18px;
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px #102b4210;
+}
+
+.ihu-filtros label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.ihu-filtros select,
+.ihu-filtros input {
+  min-width: 190px;
+  padding: 12px;
+  border: 1px solid #cbd7e2;
+  border-radius: 8px;
+  background: white;
+  font-size: 15px;
+}
+
+.ihu-filtros input {
+  flex: 1;
+  min-width: 220px;
+}
+
+.ihu-vistas {
+  display: flex;
+  gap: 5px;
+}
+
+.ihu-vistas button {
+  padding: 11px 15px;
+  border: 1px solid #071b2c;
+  border-radius: 7px;
+  background: white;
+  color: #071b2c;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.ihu-vistas button.activo {
+  background: #d00000;
+  color: white;
+  border-color: #d00000;
+}
+
+.ihu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.ihu-producto {
+  min-width: 0;
+  overflow: hidden;
+  background: white;
+  border: 1px solid #dce5ed;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px #102b4210;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.ihu-producto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 9px 22px #102b4225;
+}
+
+.ihu-imagen-contenedor {
+  position: relative;
+  height: 175px;
+  overflow: hidden;
+  background: #071b2c;
+}
+
+.ihu-imagen-contenedor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ihu-numero {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 7px 12px;
+  background: #d00000;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ihu-producto-info {
+  padding: 15px;
+}
+
+.ihu-producto-info h3 {
+  margin: 0 0 9px;
+  color: #071b2c;
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.ihu-producto-info p {
+  color: #526273;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.ihu-producto-info details {
+  margin: 12px 0;
+  color: #075c9e;
+  font-size: 14px;
+}
+
+.ihu-producto-info summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.ihu-agregar {
+  width: 100%;
+  padding: 12px;
+  border: 0;
+  border-radius: 8px;
+  background: #d00000;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.ihu-agregar:hover {
+  background: #a90000;
+}
+
+.ihu-lista {
+  grid-template-columns: 1fr;
+}
+
+.ihu-lista .ihu-producto {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+}
+
+.ihu-lista .ihu-imagen-contenedor {
+  height: 100%;
+  min-height: 160px;
+}
+
+.ihu-panel-carrito {
+  margin-top: 30px;
+  padding: 25px;
+  background: white;
+  border: 2px solid #d00000;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px #102b4212;
+}
+
+.ihu-carrito-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #dce5ed;
+  padding-bottom: 15px;
+}
+
+.ihu-carrito-titulo h3 {
+  margin: 0;
+  color: #071b2c;
+}
+
+.ihu-carrito-titulo button,
+.ihu-item-carrito button {
+  padding: 8px 12px;
+  border: 1px solid #ccd7e1;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+
+.ihu-item-carrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e5ebf0;
+}
+
+.ihu-item-carrito strong {
+  color: #071b2c;
+}
+
+.ihu-item-carrito button:last-child {
+  color: #c00000;
+}
+
+.ihu-datos-cliente {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.ihu-datos-cliente input,
+.ihu-datos-cliente textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ccd7e1;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.ihu-datos-cliente textarea {
+  grid-column: 1 / -1;
+  min-height: 100px;
+  resize: vertical;
+}
+
+.ihu-acciones-carrito {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.ihu-acciones-carrito button {
+  padding: 13px 20px;
+  border: 0;
+  border-radius: 8px;
+  background: #071b2c;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ihu-acciones-carrito button:last-child {
+  background: #0ba846;
+}
+
+@media(max-width:1100px) {
+  .ihu-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media(max-width:750px) {
+  .ihu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ihu-filtros {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .ihu-filtros label {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ihu-filtros select,
+  .ihu-filtros input {
+    width: 100%;
+  }
+
+  .ihu-lista .ihu-producto {
+    grid-template-columns: 130px 1fr;
+  }
+
+  .ihu-lista .ihu-imagen-contenedor {
+    min-height: 180px;
+  }
+}
+
+@media(max-width:480px) {
+  .ihu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ihu-lista .ihu-producto {
+    grid-template-columns: 1fr;
+  }
+
+  .ihu-lista .ihu-imagen-contenedor {
+    height: 180px;
+  }
+
+  .ihu-datos-cliente {
+    grid-template-columns: 1fr;
+  }
+
+  .ihu-datos-cliente textarea {
+    grid-column: auto;
+  }
+
+  .ihu-acciones-carrito {
+    flex-direction: column;
+  }
+
+  .ihu-acciones-carrito button {
+    width: 100%;
+  }
+}
+
+/* MEJORA VISUAL IHUARAQUI - IMAGENES COMPLETAS */
+.ihu-imagen-contenedor {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #071b2c;
+}
+
+.ihu-imagen-contenedor img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Mantener imagen completa en vista de lista */
+.ihu-lista .ihu-imagen-contenedor {
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 16 / 9;
+}
+
+
+/* CORRECCION: MOSTRAR IMAGENES COMPLETAS */
+.ihu-imagen-contenedor {
+  height: auto !important;
+  aspect-ratio: auto !important;
+  overflow: visible !important;
+}
+
+.ihu-imagen-contenedor img {
+  width: 100%;
+  height: auto !important;
+  max-height: none;
+  object-fit: contain !important;
+  display: block;
+}
+
+.ihu-lista .ihu-imagen-contenedor {
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: auto !important;
+}
+
+
+/* AJUSTE PROFESIONAL DEL BORDE DEL CARRITO */
+.ihu-panel-carrito {
+  box-sizing: border-box !important;
+  border: 2px solid #d00000 !important;
+  border-radius: 14px !important;
+  outline: none !important;
+  box-shadow: 0 5px 20px rgba(16, 43, 66, 0.08) !important;
+}
+
+
+/* ==========================================
+   IHUARAQUI - FORMULARIO PUBLICO PREMIUM
+   Solo afecta a la sección de cotización
+========================================== */
+
+#cotizar .card {
+  background: #ffffff;
+  border: 1px solid #dce5ed;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 8px 28px rgba(7, 27, 44, 0.08);
+}
+
+#cotizar form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+#cotizar form input,
+#cotizar form select,
+#cotizar form textarea {
+  width: 100%;
+  min-width: 0;
+  min-height: 52px;
+  padding: 14px 16px;
+  border: 1px solid #cbd7e2;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #142235;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+#cotizar form input:focus,
+#cotizar form select:focus,
+#cotizar form textarea:focus {
+  border-color: #0789ed;
+  box-shadow: 0 0 0 3px rgba(7, 137, 237, 0.12);
+}
+
+#cotizar form textarea {
+  grid-column: 1 / -1;
+  min-height: 145px;
+  resize: vertical;
+}
+
+#cotizar form button {
+  grid-column: 1 / -1;
+  min-height: 54px;
+  border: 0;
+  border-radius: 11px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(7, 137, 237, 0.18);
+}
+
+#cotizar .card small {
+  display: block;
+  margin-top: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  #cotizar .card {
+    padding: 18px;
+  }
+
+  #cotizar form {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  #cotizar form textarea,
+  #cotizar form button {
+    grid-column: 1;
+  }
+}
+

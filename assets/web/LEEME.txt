@@ -1,0 +1,8 @@
+IHUARAQUI TORNO INDUSTRIAL - IMAGENES DEL CATALOGO
+Contiene 20 recortes de las tarjetas de referencia, numerados según las 20 categorías.
+Copiar los 20 archivos JPG a:
+D:\Ihuaraqui_Web\assets\img\catalogo
+
+NOTA:
+Estas imágenes son recortes de la lámina de referencia que envió el usuario.
+Para una versión comercial final, se recomienda sustituirlas por fotografías individuales de cada producto/servicio.
